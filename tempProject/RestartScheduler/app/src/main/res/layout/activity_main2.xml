@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    >
+
+
+    <TextView
+        android:id="@+id/customDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Select reset day and time" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/spinner_background"
+        android:entries="@array/items"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/customDialog" />
+
+    <TimePicker
+        android:id="@+id/simpleTimePicker"
+        android:background="@color/lightGray"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/customDialog" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="confirm"
+        android:text="Confirm"
+        android:textColor="@color/colorBlack"
+        android:textColorHighlight="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExit"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="cancel"
+        android:text="Cancel"
+        android:textColor="@color/colorBlack"
+        android:textColorHighlight="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>

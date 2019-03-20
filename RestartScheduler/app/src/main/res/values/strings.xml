@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RestartScheduler</string>
+
+
+    <string-array name="items2">
+        <item>Black and Green</item>
+        <item>Black and White</item>
+        <item>Black and Grey</item>
+    </string-array>
+
+    <string-array name="items">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+</resources>

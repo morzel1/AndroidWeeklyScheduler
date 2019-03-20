@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <!-- green and black theme -->
+    <style name="theme1" parent="AppTheme" >
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+    </style>
+
+
+    <!-- black and white theme -->
+    <style name="theme2" parent="AppTheme" >
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+    </style>
+
+    <!-- black and grey theme -->
+    <style name="theme3" parent="AppTheme" >
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/darkGray</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+
+    </style>
+
+</resources>

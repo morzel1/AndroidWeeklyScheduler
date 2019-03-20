@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AppTheme" parent="android:Theme.Material" >
+
+    </style>
+
+    <style name="test1" parent="android:Theme.Material" >
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+
+
+    <style name="theme1" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+    </style>
+
+    <style name="theme2" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+    </style>
+
+    <style name="theme3" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/darkGray</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="android:colorBackground">@color/colorComplete</item>
+        <item name="android:windowBackground">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+    </style>
+</resources>

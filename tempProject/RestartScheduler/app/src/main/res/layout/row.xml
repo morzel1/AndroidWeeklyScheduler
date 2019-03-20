@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/taskTime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/task_title"
+        android:layout_alignStart="@+id/task_title"
+        android:layout_below="@+id/task_day"
+        android:text=" At  "
+        />
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorBlack"
+        android:onClick="deleteTask"
+        android:text="Delete"
+        />
+
+    <TextView
+        android:id="@+id/task_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_title"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="TextView"
+        />
+
+    <TextView
+        android:id="@+id/task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="TextView"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:text="Resets every "
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/borders"
+        android:clickable="true"
+        android:onClick="updateBox"
+        android:shadowColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1.5"
+        android:text="T"
+        android:textAlignment="center"
+        android:textColorHighlight="@android:color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Task Complete?"
+        android:textAlignment="center"
+        android:textColor="@color/HTMLGray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
