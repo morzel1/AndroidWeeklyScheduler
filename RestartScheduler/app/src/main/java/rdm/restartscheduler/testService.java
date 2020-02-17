@@ -66,12 +66,13 @@ public class testService extends Service {
         taskList3 = dbHelper.getTaskList3();
         taskList4 = dbHelper.getTaskList4();
 
-        if(isForeground("rdm.restartscheduler")){
+        /*if(isForeground("rdm.restartscheduler")){
             stopSelf();
         }
+        */
         super.onCreate();
 
-        Long time = new GregorianCalendar().getTimeInMillis()+1000*60*15;
+        Long time = new GregorianCalendar().getTimeInMillis()+1000*60*5;
         Intent intentAlarm = new Intent(this, AlarmReceiver.class);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -88,7 +89,7 @@ public class testService extends Service {
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
         Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
-        Notification notification = new Builder(this, CHANNEL_ID)
+        /*Notification notification = new Builder(this, CHANNEL_ID)
                 .setContentTitle("Weekly Scheduler")
                 .setContentText("Scheduler still running")
                 .setSmallIcon(R.drawable.ic_white)
@@ -96,6 +97,7 @@ public class testService extends Service {
                 .build();
 
         startForeground(1, notification);
+        */
 
         //second notification
 
@@ -204,13 +206,14 @@ public class testService extends Service {
         return null;
     }
 
+    /*
     public boolean isForeground(String myPackage) {
         ActivityManager manager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         List<ActivityManager.RunningTaskInfo> runningTaskInfo = manager.getRunningTasks(1);
         ComponentName componentInfo = runningTaskInfo.get(0).topActivity;
         return componentInfo.getPackageName().equals(myPackage);
     }
-
+    */
 
 
 }
