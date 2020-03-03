@@ -28,6 +28,7 @@ public class Main2Activity extends AppCompatActivity {
     String selectedTheme;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Bundle bundle = getIntent().getExtras();
@@ -37,10 +38,13 @@ public class Main2Activity extends AppCompatActivity {
         if(selectedTheme!=null) {
             if (selectedTheme.equals("Black and Green")) {
                 setTheme(R.style.theme1);
+                setTheme(R.style.theme1TimePicker);
             } else if (selectedTheme.equals("Black and White")) {
                 setTheme(R.style.theme2);
+                setTheme(R.style.theme2TimePicker);
             }else if (selectedTheme.equals("Black and Grey")){
                 setTheme(R.style.theme3);
+                setTheme(R.style.theme2TimePicker);
             }
         }
 

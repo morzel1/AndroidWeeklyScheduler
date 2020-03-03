@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "rdm.restartscheduler"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 26
         versionName "3.6"
