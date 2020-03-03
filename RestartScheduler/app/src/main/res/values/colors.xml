@@ -10,6 +10,7 @@
     <color name="darkGray">#808080</color>
 
     <color name="backgroundColor">#000</color>
+    <color name="transparent">#00000000</color>
     <color name="colorTitle">#00ff00</color>
     <color name="colorWords">#7fff7f</color>
     <color name="colorYes">#00ff00</color>

@@ -35,6 +35,13 @@
         <item name="android:colorForeground">@color/colorTitle</item>
     </style>
 
+    <!-- green and black theme buttons -->
+    <style name="theme1Button" parent="@android:style/Widget.Material.Button.Borderless">
+        <item name="colorButtonNormal">@color/transparent</item>
+        <item name="boxBackgroundColor">@color/transparent</item>
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
+
 
     <!-- black and white theme -->
     <style name="theme2" parent="AppTheme" >
