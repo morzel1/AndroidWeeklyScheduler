@@ -9,4 +9,5 @@
     android:layout_centerVertical="true"
     android:textAppearance="?android:attr/textAppearanceLarge"
     android:textColor="@color/colorBlack"
+
     />
